@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.xmas.overlay.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"GameRendererInvoker",
+		"GameRendererMixin",
+		"HeldItemRendererInvoker",
+		"HeldItemRendererMixin",
+		"ItemModelManagerMixin",
+		"LivingEntityMixin",
+		"SkyRenderStateAccessor",
+		"SkyRenderingMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "xmasoverlay",
+	"version": "${version}",
+	"name": "Christmas Overlay",
+	"description": "Butterfly-knife skins with hand tricks, Christmas mining overlay and particles, galaxy night sky, Christmas hearts and hunger, camera zoom-out and visual swing speed. Everything is configurable in a custom menu.",
+	"authors": [
+		"you"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.xmas.overlay.client.XmasOverlayClient"
+		],
+		"modmenu": [
+			"dev.xmas.overlay.client.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		{
+			"config": "xmasoverlay.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"icon": "assets/xmasoverlay/icon.png",
+	"suggests": {
+		"modmenu": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {},
+			"badges": [
+				"client"
+			]
+		}
+	}
+}
